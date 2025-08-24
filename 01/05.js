@@ -3,3 +3,10 @@ function asyncSum(a, b) {
 }
 
 // Напиши функцию, складывающую числа через await
+
+async function fn() {
+  const sum = await asyncSum(2, 3);
+  console.log("sum", sum);
+}
+
+fn();
