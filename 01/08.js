@@ -3,3 +3,11 @@ function asyncCallback(callback) {
 }
 
 // Сделай обёртку callback-функции в промис
+
+function promiseCallback() {
+  return new Promise((resolve) => {
+    asyncCallback((result) => {
+      resolve(result);
+    });
+  });
+}
