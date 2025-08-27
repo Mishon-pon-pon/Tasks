@@ -7,3 +7,11 @@ function randomPromise() {
 }
 
 // Обработай результат с помощью .then и .catch
+
+randomPromise()
+  .then((res) => {
+    console.log("res", res);
+  })
+  .catch((e) => {
+    throw e;
+  });
